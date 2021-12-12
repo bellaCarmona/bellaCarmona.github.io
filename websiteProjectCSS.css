@@ -1,0 +1,46 @@
+/*
+Name: Isabella Carmona
+CSCI 140, Fall 2021   
+Assignment: Website Project 
+Date: 12/02/2021
+*/
+/*Website Project Style Rules*/
+body	{background-color:#7c73e6; text-align:center;}
+h1		{color:#ffc0cb; font-family:helvetica, sans-serif; font-size:48px; font-weight:900; border:2px solid #fafafa; border-radius:35px;}
+h2 		{color:#ffe9e3; font-family:helvetica, sans-serif; font-size:28px; font-weight:550;}
+h3 		{color:#fafafa; font-family:helvetica, sans-serif; font-style:italic; font-size:28px; font-weight:500;}
+h4		{color:#fafafa; font-family:helvetica, sans-serif; font-style:italic; font-size:24px; font-weight:500; margin-bottom:0; padding:0;}
+p 		{color:#fafafa; font-family:garamond, serif; font-size:24px; font-weight:400; margin-right:150px; margin-left:150px;}
+p:hover	{color:#ffef96}
+div		{ text-indent:2.0em; text-align:left;}
+a 		{color:#7c73e6; font-family:garamond, serif; font-size:20px; font-weight:400;}
+ul		{text-align:left; display:inline-block; color:#ffc0cb; margin:0;}
+span	{color:#ffc0cb;}
+table 	{margin-left:auto; margin-right:auto;}
+table, th, td 	{
+					border:  2px solid #fafafa;
+					border-collapse:collapse;
+					background-color:#ffe9e3;
+					text-align:center;
+					color:#7c73e6;
+					font-family:garamond, serif;
+					font-size:20px;
+					font-weight:300;
+					height:75px;
+					width:300px;
+					table-layout:fixed;
+				}
+.threeHundred	{height:300px;}
+#video1 {
+			display: inline-block;
+			border:1px solid #fafafa;
+			margin:0;
+			padding:0; 
+			width:500px;
+			height:500px;
+		}
+figcaption	{
+				font-style: italic;
+				padding: 4px;
+				text-align: center;
+			}

@@ -1,0 +1,177 @@
+<!-- 
+Name: Isabella Carmona
+Assignment: Website Project
+Date: 12/02/2021
+CSCI 140, Fall 2021
+-->
+<!-- 
+Template for running JavaScript Programs in a Web Page:
+Place your program code between the <script> and </script> tags.
+Then then launch the program in your Web browser
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Traditional Art</title>
+
+<link rel="stylesheet" href="websiteProjectCSS.css">
+
+
+<style>
+/* place CSS style rules here */
+
+</style>
+
+</head>
+
+<body onload="startTime()">
+<!-- place html web page content here -->
+<h1>Traditional Art</h1>
+<script src="websiteProject.js"></script>
+<h2 id="txt"></h2>
+
+<h2><span>My Progress</span></h2>
+<div>
+<p>I have been in school for a few months now. I am really happy with
+all that I have learned so far in such a short amount of time! It has actually been extremely fun trying
+ out different materials that I never would have thought of using before,
+like aluminum. I was honestly kind of scared when I first started just
+because I do not have any experience with traditional art. Fortunately
+though, my teachers have been very supportive and my months of digital drawing have translated
+into confidence with drawing on paper. I am not quite perfect at it yet and
+I still have a lot to learn, but I know that will just come with more practice.
+</p>
+</div>
+<h2><span>Click on the pictures
+below to see their descriptions</span></h2>
+
+<table>
+	<tr class="threeHundred">
+		<td id="topLeft"><button onclick="fillTL()"><img src="abstract.jpg" alt="Abstract" height="285" width="285"></button></td>
+		<td id="topMiddle"><button onClick="fillTM()"><img src="aluminum.jpg" alt="Aluminum" height="285" width="285"></button></td>
+		<td id="topRight"><button onClick="fillTR()"><img src="nightCharcoal.jpg" alt="Night Charcoal" height="285" width="285"></button></td>
+	</tr>
+	<tr class="threeHundred">
+		<td id="bottomLeft"><button onClick="fillBL()"><img src="collage.jpg" alt="Collage" height="285" width="285"></button></td>
+		<td id="bottomMiddle"><button onClick="fillBM()"><img src="stillLife.jpg" alt="Still Life" height="285" width="285"></button></td>
+		<td id="bottomRight"><button onClick="fillBR()"><img src="selfPortrait.jpg" alt="Self Portrait" height="285" width="285"></button></td>
+	</tr>
+</table>
+<br>
+<h2><span>Charcoal Drawing</span></h2>
+<audio autoplay controls loop>
+	<source src="charcoalSound.mp3" type="audio/mpeg">
+</audio>
+<div>
+<p>This audio file is the sound of me sketching with charcoal. You 
+can hear the different types of noises I made depending on how I moved my 
+pencil. I made hatching motions, circular motions, and shading motions. I 
+think it's a very satisfying to listen to. Sometimes while I'm drawing, I 
+do not listen to music so I can relax and only hear these calming 
+sounds.</p>
+</div>
+<video id="video1" src="charcoalVideo.mp4"
+preload="metadata" controls></video>
+<div>
+<p>The video file above is of me showing the camera what my hands
+look like after I have been sketching for a long time. When I draw with 
+charcoal, my hands turn very black. When I use graphite, they turn a
+more silvery color, but get just as dirty. This is because the materials
+become powdery (especially the charcoal) while I am using them. This can
+be to my advantage, though, when I want to make shapes look softer or 
+for shading. If I use a black glove with the fingertips cut off, it tends
+to lead to less of this mess.</p>
+</div>
+
+<h2><span>Exhibition Experience</span></h2>
+<div>
+<p>
+In my AH-355 History of Graphic Design class, I had the opportunity to display
+my art work in Morrissey Gallery and St. Ambrose University. The project was in
+support of the Re/Building Community annual theme that the school currently has. 
+I chose a historical inspiration and implemented it in a work that represents 
+"where I come from." My inspiration was Simon de Colines from the Renaissance
+period and his beautifully detailed book covers. This project was a bit out of 
+my comfort zone because I have not really ever made art that is introspective 
+in nature. I ended up embracing it, though, and I would even like to redo it 
+with a bit more contrast of black and white the next time. 
+</p>
+</div>
+<img style="border:2px solid #fafafa" src="whereICome.jpg" alt="Where I Come From" width="600" height="600">
+
+<h2><span>Current Project</span></h2>
+<div>
+<p>
+I am currently working on a series of drawings related to the word "comb".
+This project started out as a challenge for me because it did not have a set 
+of rules to constrain the works, like still-life might do. Our teacher instead
+encouraged us to think out-of-the-box and draw anything, in any style, that 
+relates to the word we chose. Once I got started, I began to have fun with the
+project and I realized that my pieces do not have to represent what
+most people imagine the word "comb" to be. This truly freed my imagination
+and below is what I have come up with so far.
+</p>
+</div>
+<table>
+	<tr class="threeHundred">
+		<td><img src="comb8.jpg" alt="Comb 8" width="300" height="300"></td>
+		<td><img src="comb9.jpg" alt="Comb 9" width="300" height="300"></td>
+		<td><img src="comb7.jpg" alt="Comb 7" width="300" height="300"></td>
+	</tr>
+	<tr class="threeHundred">
+		<td><img src="comb1.jpg" alt="Comb 1" width="300" height="300"></td>
+		<td><img src="comb4.jpg" alt="Comb 4" width="300" height="300"></td>
+		<td><img src="comb3.jpg" alt="Comb 3" width="300" height="300"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><img src="comb6.jpg" alt="Comb 6" width="450" height="300"></td>
+		<td><img src="comb2.jpg" alt="Comb 2" width="300" height="300"></td>
+	</tr>
+	<tr>
+		<td colspan="3"><img src="comb5.jpg" alt="Comb 5" width="530" height="300"></td>
+	</tr>
+</table>
+<br><br>
+<h2><span>Where would you like to go next?</span></h2>
+<table>
+<tr>
+<td><a href="index.html">Return To Homepage</a></td>
+<td><a href="digitalart.html">See My Digital Art!</a></td>
+<td><a href="computerscience.html">See My Computer Programs!</a></td>
+</tr>
+</table>
+<br><br><br>
+<script>
+// Place JavaScript Code Here
+"use strict";
+function fillTL()
+{
+	document.getElementById("topLeft").innerHTML = "Abstract Demon (Sep. 2021) - Drawing project made with ink, charcoal, graphite, and collage techniques. What do you see? I see a dark being with wings.";
+}
+function fillTM()
+{
+	document.getElementById("topMiddle").innerHTML = "Pandemic Planet (Sep. 2021) - 2D Design project made with embossed aluminum. Shows a scene of where I spent a lot of time during the COVID-19 pandemic.";
+}
+function fillTR()
+{
+	document.getElementById("topRight").innerHTML = "Nighttime Scene (Sep. 2021) - Drawing project made with charcoal. The scene is of a staircase at my husband's grandma's house in Mexico.";
+}
+function fillBL()
+{
+	document.getElementById("bottomLeft").innerHTML = "Textural Collage (Oct. 2021) - 2D Design project made with handmade textural rubbings. The shape is a habanero.";
+}
+function fillBM()
+{
+	document.getElementById("bottomMiddle").innerHTML = "Still Life Self-Portrait (Oct. 2021) - Drawing project of still life drawing using graphite. Contains objects that represent important parts of my life.";
+}
+function fillBR()
+{
+	document.getElementById("bottomRight").innerHTML = "Self Portrait (Nov. 2021) - Drawing project made with charcoal. Made by looking at myself in a mirror with dramatic lighting. I am very proud of this one, as it is the most realistic I have gotten in my figure drawings.";
+}
+</script>
+
+</body>
+
+</html>

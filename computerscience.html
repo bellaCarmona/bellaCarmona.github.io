@@ -1,0 +1,233 @@
+<!-- 
+Name: Isabella Carmona
+Assignment: Website Project
+Date: 12/02/2021
+CSCI 140, Fall 2021
+-->
+<!-- 
+Template for running JavaScript Programs in a Web Page:
+Place your program code between the <script> and </script> tags.
+Then then launch the program in your Web browser
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Computer Science</title>
+
+<link rel="stylesheet" href="websiteProjectCSS.css">
+
+<style>
+/* place CSS style rules here */
+</style>
+
+</head>
+
+<body onload="startTime()">
+<!-- place html web page content here -->
+<h1>Computer Science</h1>
+
+<script src="websiteProject.js"></script>
+<h2 id="txt"></h2>
+
+<p id="quiz"><button onClick="mostUsed()">Take A Quiz</button></p>
+
+<h2><span>My Background</span></h2>
+<div>
+<p>Computer Science is my other major at St. Ambrose University. I first 
+found out about computer science through a parent from the daycare I used 
+to work at. She seemed very happy and successful in her job and I asked 
+her what she majored in when she was in college. She told me, "computer 
+science." This planted the seed in my mind, but I still did not really 
+understand what the subject was, since I was not very technologically
+inclined. Around this time, I had been developing my love for art and I did not
+really think too much about computer science for the next couple of years. </p>
+
+<p>In the spring of 2021, I finally decided to buckle down and explore my college 
+options. I decided on graphic design and once I started looking at the
+required classes and different job requirements, I noticed that computer science
+kept popping up. I made the decision that it 
+would be extremely beneficial for me to have coding skills. I took an online
+Udemy course for Python in August so I could dip my toes in the water 
+before I started school. I ended up loving it!
+Since I had already learned to pay close attention to detail through my
+art, programming has come relatively easy to me. Even though 
+technology used to seem daunting to me, I feel that I have a unique way of 
+finding solutions because of my artistic background.</p>
+
+<p>Now that I am in school, I truly love programming. The homework that is 
+assigned to me is very satisfying and I find myself cheering for joy after
+debugging code that had me wracking my brain for an hour. Right now, I am
+taking a Foundations of Computer Science course, which is where I am 
+learning the skills to make the website you are looking at right now!
+I enjoy this front-end coding class and I have been having a lot of 
+fun with the CSS rules. I like using HTML and JavaScript because I can see 
+the results of my coding come to life in color on a website.
+My Programming I class, which is Python-based, is different in some ways, since it's
+more back-end coding. I actually think it is just as much
+fun, though, because I get to solve a lot of logical problems. I am learning more about
+this type of math in my Discrete Structures course and it definitely feels a lot more 
+applicable to real life than high school math.
+</p>
+</div>
+
+<h2><span>Coding Languages I Am Proficient In</span></h2>
+<ul>
+	<li style="color:#ffe9e3; font-size:22px;">Python</li>
+	<li style="color:#ffe9e3; font-size:22px;">JavaScript</li>
+</ul>
+
+<h2><span>Interactive Programs I Created In Python</span></h2>
+
+<h4>"Rock, Paper, Scissors, Lizard, Spock"</h4>
+<div>
+<p>This program shows a menu with 5 options. The user then chooses
+who they want to play as and the computer's choice is randomly generated.
+The program uses many if/elif/else statements and returns unique strings,
+depending on the user and computer choices.</p>
+</div>
+<img style="border:2px solid #fafafa" src="rpslsResult.png" alt="RPSLS Result" height="300" width="800">
+<br>
+<h4>"Flipping Coins"</h4>
+<div>
+<p>The program shows a menu for the user
+to choose from. There are options that complete relatively simple tasks, 
+such as flipping a coin, using a random integer generator, and returning
+"Heads" or "Tails." It can also complete more complicated tasks, such as
+using nested for loops and if/else statements to find the likelihood of
+getting four "Heads" in a row.</p>
+</div>
+<img style="border:2px solid #fafafa" src="flipCoin1.png" alt="Flip Coin Option 1" height="394" width="700">
+<img style="border:2px solid #fafafa" src="flipCoin5.png" alt="Flip Coin Option 5" height="394" width="700">
+<br>
+<h4>"Pixel Averaging"</h4>
+<div>
+<p>This program averages pixels from PPM files and converts a noisy image 
+into a significantly higher resolution one. This is done using nested for loops. 
+I really loved creating this program and I was impatient during the whole 
+process because I could not wait to see the end results! I would love to 
+have a job doing this for photographers. Click on the buttons below to see 
+the "before" images turn into the "after" images.
+</p>
+</div>
+<button style="margin-right:125px;" onclick="changeTL()">The Cone Nebula - NGC 2264</button>
+<button onclick="changeTR()">Interstellar Bubble N44F</button>
+<table>
+
+	<tr class="threeHundred">
+		<td id="topLeft"><img src="coneOld.jpg" id="changeTL" alt="Cone Nebula - Old" height="300" width="300"></td>
+		<td id="topRight"><img src="n44fOld.jpg" id="changeTR" alt="Interstellar Bubble - Old" height="300" width="300"></td>
+	</tr>
+	<tr class="threeHundred">
+		<td id="bottomLeft"><img src="orionOld.jpg" id="changeBL" alt="Orion Nebula - Old" height="300" width="300"></td>
+		<td id="bottomRight"><img src="wfc3Old.jpg" id="changeBR" alt="Carina Nebula - Old" height="300" width="300"></td>
+	</tr>
+</table>
+<button style="margin-right:175px;" onclick="changeBL()">The Orion Nebula</button>
+<button onclick="changeBR()">Carina Nebula</button>
+<br><br>
+<h4>"Sudoku Solver"</h4>
+<div>
+<p>This program solves simple sudoku puzzles by reading in a text file
+and implements nested sets and while loops in its algorithm. The video below shows an example
+of the program solving a simple puzzle and then failing to solve a 
+slightly more difficult one.  
+</p>
+</div>
+<video src="sudokuVideo.mp4" width="850" height="850"
+preload="metadata" controls></video>
+<br><br>
+<h4>"Recursive Art"</h4>
+<div>
+<p>
+This program involved using a recursive approach to the algorithm. It
+creates random computer-generated colored squares that look like Piet
+Mondrian's abstract art. This was also definitely my favorite program
+that I have written so far because I got to be creative for the second
+part of it (right image). I tweaked it so that some of the squares turned black or 
+a different color, depending on their location. This resulted in a 
+Tetris-like pattern.
+</p>
+</div>
+<img src="recursiveMondrian.jpg" alt="Recursive Mondrian" width="500" height="500">
+<img src="recursiveTetris.jpg" alt="Recursive Tetris" width="500" height="500">
+
+<br><br>
+<h2><span>Where would you like to go next?</span></h2>
+<table>
+<tr>
+<td><a href="index.html">Return To Homepage</a></td>
+<td><a href="digitalart.html">See My Digital Art!</a></td>
+<td><a href="traditionalart.html">See My Traditional Art!</a></td>
+</tr>
+</table>
+<br><br><br>
+
+<script>
+// Place JavaScript Code Here
+"use strict";
+function mostUsed(guess)
+{	
+	let result = 0;
+	for (var count = 0; count < 3; count ++)
+	{
+		let guess = parseInt(prompt("Which programming language is the most widely used in the world?      1. Java 2. Python 3. Javascript (Enter 1, 2, or 3 to answer)"));
+		if (guess != 3)
+		{
+			result = window.alert("Nope!");
+		}
+		else
+		{
+			break;
+		}
+	}
+	if (count < 3)
+	{
+		result = ("Yup, the most widely used programming language in the world is <span>Javascript</span>. It is used for web, game, and mobile app development.");
+	}
+	else
+	{
+		result = ("Nope, the most widely used programming language in the world is <span>Javascript</span>. It is used for web, game, and mobile app development.");
+	}
+	document.getElementById("quiz").innerHTML = result;
+}
+
+function changeTL()
+{
+	let imageID = document.getElementById("changeTL");
+	if (imageID.src.match("coneOld.jpg"))
+	{
+		imageID.src = "coneNew.jpg";
+	}
+}
+function changeTR()
+{
+	let imageID = document.getElementById("changeTR");
+	if (imageID.src.match("n44fOld.jpg"))
+	{
+		imageID.src = "n44fNew.jpg";
+	}
+}
+function changeBL()
+{
+	let imageID = document.getElementById("changeBL");
+	if (imageID.src.match("orionOld.jpg"))
+	{
+		imageID.src = "orionNew.jpg";
+	}
+}
+function changeBR()
+{
+	let imageID = document.getElementById("changeBR");
+	if (imageID.src.match("wfc3Old.jpg"))
+	{
+		imageID.src = "wfc3New.jpg";
+	}
+}       
+</script>
+
+</body>
+
+</html>

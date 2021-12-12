@@ -1,0 +1,194 @@
+<!-- 
+Name: Isabella Carmona
+Assignment: Website Project
+Date: 12/02/2021
+CSCI 140, Fall 2021
+-->
+<!-- 
+Template for running JavaScript Programs in a Web Page:
+Place your program code between the <script> and </script> tags.
+Then then launch the program in your Web browser
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Digital Art</title>
+
+<link rel="stylesheet" href="websiteProjectCSS.css">
+
+<style>
+/* place CSS style rules here */
+	
+</style>
+
+</head>
+
+<body onload="startTime()">
+<!-- place html web page content here -->
+<h1>Digital Art</h1>
+
+<script src="websiteProject.js"></script>
+<h2 id="txt"></h2>
+
+<h2><span>My Background</span></h2>
+<div>
+<p>	
+Welcome to my digital art page! I started making digital art in 2019. I was working another job at the time and I started to notice people on the Internet making art and 
+I yearned to have that type creative passion. So, I started creating art in my free time. I particularly liked the anime style of art and so I started 
+creating my own illustrations based off of popular media. I used Adobe Photoshop for about 2 years and made a conscious effort to draw almost 
+every day. I eventually switched to the Procreate application for illustration on iPad. My first few drawings are obviously a bit embarrassing, since 
+I am still a relatively new artist. But, through loads of repetition and patience, I have reached the place I am at today. 
+</p>
+<p>
+In fact, digital art has been life changing for me. During the past year, I have been able to connect with other digital artists who make art for
+their career. After speaking with them and hearing their experiences, they are what really motivated me to start going to college. I have decided
+that I wanted to get a formal education on it in order to make my art even more marketable. I would also like to learn the ins and outs of the art 
+industry and figure out my place in the art world!
+</p>
+</div>
+<p>
+ Below are some of my pieces from the year 2021. 
+ </p>
+<h2><span>School Project With Digital Art</span></h2>
+<img style="border:2px solid #fafafa" src="revengeOnIthaca.jpg" alt="Revenge On Ithaca" width="624" height="832">
+<div>
+<p> In my 2-D Design class,
+I designed a gig poster for a made-up band named “Revenge on Ithaca.” The band received this name because the poster depicts 
+Circe, a minor goddess from ancient Greek mythology. 
+She was exiled to the island of Aeaea after turning another goddess into a sea monster. She became very attuned to the nature 
+of her island and in turn honed her potent magical powers. Visitors would wash up on her shore at times, but often they were 
+brute men that she turned into pigs when they would make forceful advances on her. One of the men that came to her island was 
+Odysseus from the island of Ithaca and they ended up becoming lovers. He eventually had to leave her to return to his wife on 
+Ithaca and much drama ensued after this due to the fact that Circe was pregnant with his child. Therefore, this is 
+where the poster received its name, as Circe felt, understandably, heartbroken from the incident. She is a very powerful 
+feminine figure and I attempted to portray this sentiment in the poster using the principles of shape, color, and line. This 
+piece was very fun for me to make, especially since I love her story. My inspiration for the art style was Aubrey Beardsley, 
+who also used contour lines and black, white, and sometimes red in his pieces. I am very happy and proud of how it came out and 
+it is even hanging on my bedroom wall right now!
+</p>
+</div>
+<h2><span>Personal Digital Art Pieces</span></h2>
+<table>
+	<tr class="threeHundred">
+		<td id="topLeft"><button onClick="fillTL()"><img src="angryGirl.jpg" alt="Angry Girl" height="285" width="285"></button></td>
+		<td id="topMiddle"><button onClick="fillTM()"><img src="ifLooks.jpg" alt="If Looks Could Kill" height="285" width="285"></button></td>
+		<td id="topRight"><button onClick="fillTR()"><img src="fancyGirl.jpg" alt="Fancy Girl" height="285" width="285"></button></td>
+	</tr>
+	<tr class="threeHundred">
+		<td>CLICK ON THE PICTURES</td>
+		<td id="center"><button onClick="fillcenter()"><img src="beneathTheMoonlight.jpg" alt="Beneath The Moonlight" height="285" width="285"></button></td>
+		<td>TO SEE THEIR DESCRIPTIONS</td>
+	</tr>
+	<tr class="threeHundred">
+		<td id="bottomLeft"><button onClick="fillBL()"><img src="fairyOfGrowth.jpg" alt="Fairy Of Growth" height="285" width="285"></button></td>
+		<td id="bottomMiddle"><button onClick="fillBM()"><img src="medusasDaughter.jpg" alt="Medusa's Daughter" height="285" width="285"></button></td>
+		<td id="bottomRight"><button onClick="fillBR()"><img src="Hangover.jpg" alt="Digital Hangover" height="285" width="285"></button></td>
+	</tr>
+</table>
+<div>
+<p>
+I would say the piece I am most proud of is "Medusa's Daughter". It took me about 3 weeks to finish and it was the first time that 
+I added intricate details to a background on one of my works. I am absolutely in love with the color scheme I chose also, as I believe 
+the popping colors add to the magical effect of it. I am currently working on "Thinking About You", and I hope to add a big city apartment type
+background to it with just as much detail. I am excited for this piece since I have recently been trying to go for a more realistic style. Here is a
+work-in-progress picture of it below!
+</p>
+</div>
+<img style="border:2px solid #fafafa" src="thinkingAboutYou.jpg" alt="Thinking About You" height="500" width="500">
+<br>
+<div>
+<p>
+The video below shows my drawing of the fictional Minotaur from ancient Greek mythology, which is something that I am very interested in! I read a
+lot about this subject and I have a lot of fun transferring the images I see in my mind onto a visual plane. This video also shows what it looks 
+like to draw on an iPad, using my Apple pencil. You can hear the sound the pencil makes as I draw on my matte screen protector. I chose this protector 
+for the satisfying sound and for the fact that it allows my hand to slide across the screen easier while drawing. 
+</p>
+</div>
+<video id="video1" src="minotaurVideo.mp4"
+preload="metadata" controls></video>
+<br>
+
+<h2><span>Click on the button below!</span></h2>
+<p id="digitalQuiz"><button onClick="artExhibition()">Here!</button></p>
+<h2><span>Where would you like to go next?</span></h2>
+<table>
+<tr>
+<td><a href="index.html">Return To Homepage</a></td>
+<td><a href="traditionalart.html">See My Traditional Art!</a></td>
+<td><a href="computerscience.html">See My Computer Programs!</a></td>
+</tr>
+</table>
+
+<br><br><br>
+
+<script>
+// Place JavaScript Code Here
+"use strict";
+function artExhibition()
+{
+	let result = "<h3>Oops, invalid input! I'll just give you the answer. The first digital painting program came to the market in <span>1984</span>. It was called MacPaint and was created by Apple.</h3>";
+	let question = parseInt(prompt("Do you want to take a quiz? (Enter 0 for YES or 1 for NO)"));
+	while (question == 0)
+	{
+		let guess = parseInt(prompt("Which year did the first digital painting program come out?"));
+		if (guess == 1984)
+		{
+			question = 2;
+			result = "<h3>You're right! The first digital painting program came to the market in <span>1984</span>! It was called MacPaint and was created by Apple.</h3>";
+		}
+		else if (guess < 1984)
+		{
+			question = parseInt(prompt("Oops, it actually came out later than the year you entered. Do you want to guess again? (Enter 0 for YES or 1 for NO)"));
+		}
+		else
+		{
+			question = parseInt(prompt("Oops, it actually came out earlier than the year you entered. Do you want to guess again? (Enter 0 for YES or 1 for NO)"));
+		}
+	}
+	if (question == 1)
+	{
+		result = "<h3>That's okay. I'll just give you the answer. The first digital painting program came to the market in <span>1984</span>. It was called MacPaint and was created by Apple.</h3>";
+	}	
+	document.getElementById("digitalQuiz").innerHTML = result + '<img style="border:2px solid #fafafa" src="macPaint.jpg" alt="MacPaint" width="450" height="300">' + '<br><a style="color:#ffe9e3" href="https://computerhistory.org/blog/macpaint-and-quickdraw-source-code/">Learn more about MacPaint</a><br>';
+}
+
+	
+function fillTL()
+{
+	document.getElementById("topLeft").innerHTML = "Angry Girl (Jan. 2021) - Made on Procreate application on iPad.";
+}
+function fillTM()
+{
+	document.getElementById("topMiddle").innerHTML = "If Looks Could Kill (Jan. 2021) - Made on Procreate application on iPad.";	
+}
+function fillTR()
+{
+	document.getElementById("topRight").innerHTML = "Fancy Girl (Feb. 2021) - Made on Procreate application on iPad.";
+}
+function fillcenter()
+{
+	document.getElementById("center").innerHTML = "Fairy of Growth (Mar.2021) - Made on Procreate application on iPad.";	
+}
+
+function fillBL()
+{
+	document.getElementById("bottomLeft").innerHTML = "Beneath the Moonlight (Mar. 2021) - Made on Procreate application on iPad.";
+}
+
+function fillBM()
+{
+	document.getElementById("bottomMiddle").innerHTML = "Medusa's Daughter (Apr. 2021) - Made on Procreate application on iPad.";
+}
+
+function fillBR()
+{
+	document.getElementById("bottomRight").innerHTML = "Hangover (May 2021) - Made on Procreate application on iPad.";
+}
+</script>
+
+</body>
+
+</html>
