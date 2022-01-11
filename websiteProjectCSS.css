@@ -40,6 +40,13 @@ table, th, td 	{
 			width:500px;
 			height:500px;
 		}
+#video2 {
+			display: inline-block;
+			border:2px solid #fafafa;
+			margin:0;
+			padding:0;
+			width:900px;
+		}
 figcaption	{
 				font-style: italic;
 				padding: 4px;
